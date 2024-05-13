@@ -36,11 +36,15 @@
         flex-direction: column;
         border-radius: 25px;
         padding: 20px;
+        transition-duration: 0.5s;
       }
       .logo {
-        width: 130px;
+        width: 140px;
         border-radius: 0%;
         height: 25%;
+        transition-duration: 0.2s;
+        padding-bottom: 10px;
+        animation: bounce 2s ease infinite;
       }
       .header {
         height: 15%;
@@ -70,6 +74,7 @@
         align-items: center;
         justify-content: center;
         transition-duration: 0.2s;
+        font-size: 18px;
       }
       .link:hover {
         color: whitesmoke;
@@ -77,10 +82,9 @@
         cursor: pointer;
         transform: scale(1.02);
         background-color: rgb(215, 109, 215);
-      }
-      .link:hover div {
-        font-size: 22px;
-        transition-duration: 1s;
+        transform: translateY(-5px) scale(1.005) translateZ(0);
+        box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+          0 24px 46px var(--box-shadow-color);
       }
       .link.linkgithub {
         width: 100%;
@@ -88,6 +92,10 @@
       }
       h2 {
         color: white;
+      }
+      h2:hover {
+        text-shadow: 2px 2px 4px #000000;
+        -webkit-animation: rainbow 3s infinite;
       }
       h3 {
         color: rgb(253, 127, 238);
@@ -97,8 +105,63 @@
         color: white;
         font-size: 15px;
       }
-      img:hover{
-        
+      @keyframes rainbow {
+        0% {
+          color: orange;
+        }
+        10% {
+          color: purple;
+        }
+        20% {
+          color: red;
+        }
+        30% {
+          color: CadetBlue;
+        }
+        40% {
+          color: yellow;
+        }
+        50% {
+          color: coral;
+        }
+        60% {
+          color: green;
+        }
+        70% {
+          color: cyan;
+        }
+        80% {
+          color: DeepPink;
+        }
+        90% {
+          color: DodgerBlue;
+        }
+        100% {
+          color: orange;
+        }
+      }
+      @keyframes bounce {
+        70% {
+          transform: translateY(0%);
+        }
+        80% {
+          transform: translateY(-15%);
+        }
+        90% {
+          transform: translateY(0%);
+        }
+        95% {
+          transform: translateY(-7%);
+        }
+        97% {
+          transform: translateY(0%);
+        }
+        99% {
+          transform: translateY(-3%);
+        }
+        100% {
+          transform: translateY(0);
+        }
       }
     </style>
   </head>
