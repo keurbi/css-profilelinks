@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(20, 19, 19);
+      }
+      .card {
+        background-color: rgb(42, 41, 41);
+        width: 40vh;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 25px;
+        padding: 20px;
+      }
+      .logo {
+        width: 130px;
+        border-radius: 0%;
+        height: 25%;
+      }
+      .header {
+        height: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .links {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        padding: 10px;
+      }
+      .link {
+        width: 49%;
+        border-radius: 10px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: violet;
+        background-color: rgb(26, 25, 25);
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 0.2s;
+      }
+      .link:hover {
+        color: whitesmoke;
+        transition-duration: 0.3s;
+        cursor: pointer;
+        transform: scale(1.02);
+        background-color: rgb(215, 109, 215);
+      }
+      .link:hover div {
+        font-size: 22px;
+        transition-duration: 1s;
+      }
+      .link.linkgithub {
+        width: 100%;
+        height: 60%;
+      }
+      h2 {
+        color: white;
+      }
+      h3 {
+        color: rgb(253, 127, 238);
+        font-size: 20px;
+      }
+      h4 {
+        color: white;
+        font-size: 15px;
+      }
+      img:hover{
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="/assets/images/kirby-in-sunglasses-512x512.png"
+        alt="moi"
+        class="logo"
+      />
+      <div class="header">
+        <h2 class="name">Loïc De Sousa</h2>
+        <h3 class="location">Metz, France</h3>
+        <h4 class="description">Web developer</h4>
+      </div>
+      <div class="links">
+        <div class="link linkgithub">GitHub</div>
+        <div class="link">LinkedIn</div>
+        <div class="link">Instagram</div>
+      </div>
+    </div>
+  </body>
+</html>
